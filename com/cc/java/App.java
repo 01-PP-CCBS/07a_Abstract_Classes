@@ -19,19 +19,13 @@ public class App {
         output("------  Differenzen ------");
         output("Diff. r-t :" + areaDiff(rectangle, triangle));
 
-
-
     }
 
+    // 2. Iteration: Polymorphie - besser! // Safe, Bro , safe !
+    private static double areaDiff(Shape s1, Shape s2){
+        return s1.area() - s2.area();
+    }
 
-    // private static double areaDiff(Rectangle r, Triangle t){
-    //     return r.area() - t.area();
-    // }
-
-        // ggf 1000 mal überladen / erste iteration
-    // private static double areaDiff(Rectangle r, Circle c){
-    //     return r.area() - c.area();
-    // }
    
 
 
